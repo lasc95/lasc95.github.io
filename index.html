@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <title>LASC Research Lab</title>
     <style>
-        /* Un poco de estilo mínimo para que no se lea tan ancho en pantallas grandes */
+        /* Estilo general */
         body {
-            font-family: "Times New Roman", Times, serif; /* La fuente clásica académica */
-            max-width: 800px; /* Para que el texto no se estire demasiado */
-            margin: 40px auto; /* Centrado */
-            line-height: 1.6; /* Mejor lectura */
+            font-family: "Times New Roman", Times, serif;
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.6;
             padding: 0 20px;
-            background-color: #ffffff; /* Blanco clínico */
+            background-color: #ffffff;
             color: #000000;
         }
         h1, h2 { border-bottom: 2px solid #000; padding-bottom: 10px; }
-        a { color: #0000EE; text-decoration: underline; } /* El azul clásico de internet */
+        a { color: #0000EE; text-decoration: underline; }
         a:visited { color: #551A8B; }
         .date { font-family: monospace; color: #555; }
+
+        /* NUEVO: Estilo para la imagen central */
+        .header-image {
+            display: block; /* Para que se pueda centrar */
+            margin: 30px auto; /* Centrado horizontal y margen arriba/abajo */
+            max-width: 100%; /* Para que se adapte a celulares */
+            height: auto; /* Mantiene la proporción */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una sombra sutil y elegante */
+        }
     </style>
 </head>
 <body>
@@ -26,27 +35,30 @@
     <p>Investigación en Inteligencia Artificial, SuperCollider y Síntesis Electroacústica.</p>
     <p>Santiago, Chile.</p>
 
-    <hr> <h2>Publicaciones & Notebooks</h2>
+    <img src="header_network.jpg" alt="Abstract Neural Network Visual" class="header-image">
+
+    <hr>
+
+    <h2>Publicaciones & Notebooks</h2>
     <ul>
         <li>
-            <span class="date">[2026-01-31]</span> 
-            <a href="URL_DE_TU_NOTEBOOK">Análisis de secuencias temporales con LSTM para generación melódica</a> (Jupyter Notebook)
+            <span class="date">[2026-01-31]</span>
+            <a href="#">Análisis de secuencias temporales con LSTM para generación melódica</a> (Jupyter Notebook)
         </li>
         <li>
-            <span class="date">[2025-12-15]</span> 
-            <a href="URL_DE_TU_PDF">Implementación de Machine Listening en SuperCollider</a> (PDF)
+            <span class="date">[2025-12-15]</span>
+            <a href="#">Implementación de Machine Listening en SuperCollider</a> (PDF)
         </li>
     </ul>
 
     <h2>Live Coding & Visuals</h2>
     <p>Experimentos con Hydra y SC.</p>
-    
     <ul>
-        <li><a href="URL_YOUTUBE">Live Session 01 - White Noise & Tensors</a></li>
+        <li><a href="#">Live Session 01 - White Noise & Tensors</a> (YouTube)</li>
     </ul>
 
     <hr>
-    
+
     <p><i>Contacto: tu_email@gmail.com</i></p>
 
 </body>
