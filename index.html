@@ -21,13 +21,19 @@
         a:visited { color: #551A8B; }
         .date { font-family: monospace; color: #555; }
 
-        /* NEW: Style for the central image */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
         .header-image {
-            display: block; /* Allows centering */
-            margin: 30px auto; /* Horizontal centering and top/bottom margin */
-            max-width: 100%; /* Responsive to mobile devices */
-            height: auto; /* Maintains aspect ratio */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle and elegant shadow */
+            width: 45%;
+            max-width: 350px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -38,7 +44,10 @@
     <p>Research in Artificial Intelligence, SuperCollider, and Electroacoustic Synthesis.</p>
     <p>Santiago, Chile.</p>
 
-    <img src="header_network.jpg" alt="Abstract Neural Network Visual" class="header-image">
+    <div class="image-container">
+        <img src="header_network.jpg" alt="Abstract Neural Network Visual" class="header-image">
+        <img src="sc.png" alt="SuperCollider Visual" class="header-image">
+    </div>
 
     <hr>
 
