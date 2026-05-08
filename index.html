@@ -6,39 +6,61 @@
     <meta name="author" content="Luis Saavedra Carretero">
     <meta name="description" content="Research log of Luis Saavedra Carretero in Artificial Intelligence, SuperCollider, and Electroacoustic Synthesis.">
     <style>
-        /* General styles */
+        /* --- EXPERIMENTAL 90s RETRO STYLE --- */
         body {
-            font-family: "Times New Roman", Times, serif;
-            max-width: 800px;
-            margin: 40px auto;
-            line-height: 1.6;
-            padding: 0 20px;
-            background-color: #fdfaf6;
+            font-family: "Courier New", monospace;
+            background-color: #c0c0c0;
             color: #000000;
+            max-width: 900px;
+            margin: 40px auto;
+            line-height: 1.5;
+            padding: 40px;
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
         }
-        h1, h2 { border-bottom: 2px solid #000; padding-bottom: 10px; }
-        a { color: #0000EE; text-decoration: underline; }
-        a:visited { color: #551A8B; }
-        .date { font-family: monospace; color: #555; }
-
+        h1, h2 {
+            text-align: center;
+            border-bottom: none;
+            padding-bottom: 5px;
+        }
+        a {
+            color: #0000FF;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #800080;
+        }
+        .date {
+            font-family: "Courier New", monospace;
+            color: #000;
+        }
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
-            margin: 30px 0;
+            gap: 15px;
+            margin: 20px 0;
+            border: 2px solid;
+            border-color: #808080 #ffffff #ffffff #808080;
+            padding: 10px;
         }
         .header-image {
             width: 45%;
             max-width: 350px;
             height: auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: none;
+            border-radius: 0;
         }
-        /* Style for the SoundCloud embed */
-        .soundcloud-embed {
-            border: none;
-            width: 100%;
+        hr {
+            height: 2px;
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #ffffff;
+            background: none;
+        }
+        /* Ocultamos el pie de página de SoundCloud que no encaja con los 90s */
+        iframe + div {
+            display: none;
         }
     </style>
 </head>
@@ -48,6 +70,7 @@
     <p><strong>Composer, pianist & data scientist</strong></p>
     <p>Research in Artificial Intelligence, SuperCollider, and Electroacoustic Synthesis.</p>
     <p>Santiago, Chile.</p>
+    <p><i>Contact: lasc.95@hotmail.com</i></p>
 
     <div class="image-container">
         <img src="header_network.jpg" alt="Abstract Neural Network Visual" class="header-image">
@@ -85,8 +108,6 @@
             <a target="_blank" href="https://imslp.org/wiki/Category:Saavedra_Carretero,_Luis">IMSLP Account (Music scores)</a>
         </li>
     </ul>
-
-    <p><i>Contact: lasc.95@hotmail.com</i></p>
 
 </body>
 </html>
