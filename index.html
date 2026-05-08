@@ -6,7 +6,6 @@
     <meta name="author" content="Luis Saavedra Carretero">
     <meta name="description" content="Research log of Luis Saavedra Carretero in Artificial Intelligence, SuperCollider, and Electroacoustic Synthesis.">
     <style>
-        /* --- EXPERIMENTAL 90s RETRO STYLE --- */
         body {
             font-family: "Courier New", monospace;
             background-color: #c0c0c0;
@@ -58,9 +57,27 @@
             border-bottom: 1px solid #ffffff;
             background: none;
         }
-        /* Ocultamos el pie de página de SoundCloud que no encaja con los 90s */
         iframe + div {
             display: none;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                border: none;
+                max-width: 100%;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .image-container {
+                flex-direction: column;
+                border: none;
+                padding: 0;
+            }
+
+            .header-image {
+                width: 90%;
+            }
         }
     </style>
 </head>
